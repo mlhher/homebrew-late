@@ -2,26 +2,26 @@ class Late < Formula
   desc "High-leverage AI agent orchestrator with ephemeral subagents"
   homepage "https://github.com/mlhher/late-cli"
   # version and sha256 values are auto-updated by CI on each release
-  version "1.2.6"
+  version "1.2.7"
   license "BUSL-1.1"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mlhher/late-cli/releases/download/v#{version}/late-darwin-arm64"
-      sha256 "5bec0c62460aa6a3bb4fefea5a3a89df6e4fd62d25f2a61e28dd261393675b90"
+      sha256 "4ce0fd651574de30ec7a587dacc1889eab9d97a9c8de697c485482e24c0f02c5"
     else
       url "https://github.com/mlhher/late-cli/releases/download/v#{version}/late-darwin-amd64"
-      sha256 "a4fe239b07e8316452adb1556425c5daea5bcbe3f9f52dccc4de547a4fdbb572"
+      sha256 "1508a5b078d03e9926b18b818417a85b41170bba3915682efc7b77bc0d91739b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/mlhher/late-cli/releases/download/v#{version}/late-linux-arm64"
-      sha256 "4628141b8c68ce2789f7961b59dbebdab9063ce413f70014b2636875c7e5b79c"
+      sha256 "530085f433f26334d4462ab5d765264dc38a9fdfc0f3adb1cf66b8302850c9fd"
     else
       url "https://github.com/mlhher/late-cli/releases/download/v#{version}/late-linux-amd64"
-      sha256 "4d2a09d5fc85c2a6ca39d9ef6c18c5674410c428090ffb7f561281e7c5b740ed"
+      sha256 "9091bcd3d0f99ee55117d4d317be02571f99b46dbc1dc781e2307603a9f25dc0"
     end
   end
 
